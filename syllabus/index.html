@@ -1,0 +1,907 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Aryan Deshwal" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://bayesopt-tutorial.github.io/syllabus/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#bbdefb" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.19a96669ea8db3907ce02c5e3301f8b6.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+    <link rel="alternate" href="/syllabus/index.xml" type="application/rss+xml" title="BO tutorial" />
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://bayesopt-tutorial.github.io/syllabus/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="BO tutorial" />
+  <meta property="og:url" content="https://bayesopt-tutorial.github.io/syllabus/" />
+  <meta property="og:title" content="BO tutorial" />
+  <meta property="og:description" content="" /><meta property="og:image" content="https://bayesopt-tutorial.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://bayesopt-tutorial.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+  
+
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <title>BO tutorial</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark " data-wc-page-id="5538b9800f06ab7b29edaa22ab7e63cb" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.d333d96014f7bcfa311294a92ace0d60.js"></script>
+
+  
+
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">BO tutorial</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">BO tutorial</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/syllabus"><span>Tutorial Syllabus and Slides</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/references"><span>List of References</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/tutorialspeakers"><span>Speakers</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://aaai.org/Conferences/AAAI-22/" target="_blank" rel="noopener"><span>AAAI 2022</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+<div class="universal-wrapper pt-3">
+  <h1></h1>
+
+  
+
+  
+</div>
+
+
+
+<div class="universal-wrapper">
+  
+    <div class="article-style"><h1 id="outline-of-the-tutorial--combined-slidescombinedpdf">Outline of the Tutorial | <a href="combined.pdf">Combined slides</a></h1>
+<h3 id="0-big-picture-of-bayesian-optimization-bo--slides0bigpicturepdf">0. Big Picture of Bayesian Optimization (BO) | <a href="0bigpicture.pdf">Slides</a></h3>
+<ul>
+<li>Motivation from real-world applications</li>
+<li>Challenges of optimizing expensive black-box functions</li>
+<li>Overview of Bayesian optimization</li>
+<li>Three key elements: statistical model, acquisition function (AF), and acquisition function optimizer (AFO)</li>
+</ul>
+<h3 id="1-foundations-of-bo--slides1introductionbogpspdf">1. Foundations of BO | <a href="1introductionbogps.pdf">Slides</a></h3>
+<ul>
+<li>
+<p>Background on Gaussian Processes (GPs)</p>
+<ul>
+<li>Two views of GPs: weight space and function space</li>
+<li>Learning and inference with GPs</li>
+<li>Scalability challenges and solutions</li>
+</ul>
+</li>
+<li>
+<p>Background on Acquisition Functions (AFs)</p>
+<ul>
+<li>Exploration vs. Exploitation trade-off</li>
+<li>Example AFs: Expected improvement (EI), Upper confidence bound (UCB), Thompson Sampling (TS), and Information-theoretic methods</li>
+<li>Optimizers: DIRECT, gradient-based methods, and evolutionary search</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-bo-over-combinatorial-spaces--slides2boovercombinatorialpdf">2. BO over Combinatorial Spaces | <a href="2boovercombinatorial.pdf">Slides</a></h3>
+<ul>
+<li>
+<p>Motivating Applications</p>
+<ul>
+<li>Manycore systems design</li>
+<li>Biological sequence design</li>
+<li>Drug/Vaccine/Molecule design</li>
+</ul>
+</li>
+<li>
+<p>Key Challenges</p>
+<ul>
+<li>Effective surrogate models for combinatorial structures (e.g., sequences, trees, graphs)</li>
+<li>Trading-off complexity of statistical model and tractability of AFO</li>
+</ul>
+</li>
+<li>
+<p>BO Methods over Original Space</p>
+<ul>
+<li>Simple models and tractable AFO</li>
+<li>Complex models and heuristic search</li>
+<li>Complex models and tractable search</li>
+<li>Complex models and effective search via learning-to-search</li>
+</ul>
+</li>
+<li>
+<p>BO Methods over Latent Continuous Space</p>
+<ul>
+<li>Advantages of reduction to BO over continuous space</li>
+<li>Deep generative models for learning latent space</li>
+<li>Challenges of BO over latent space: valid structures, high-dimensionality, imperfect decoder</li>
+<li>Recent algorithmic advances: weighted re-training, LADDER, and high-dimensional BO</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-bo-over-hybrid-spaces--slides3booverhybridpdf">3. BO over Hybrid Spaces | <a href="3booverhybrid.pdf">Slides</a></h3>
+<ul>
+<li>
+<p>Motivating Applications</p>
+<ul>
+<li>Material design</li>
+<li>Microbiome design</li>
+<li>Auto ML tasks</li>
+</ul>
+</li>
+<li>
+<p>Key Challenges</p>
+<ul>
+<li>Effective surrogate models for hybrid structures</li>
+<li>Trading-off complexity of statistical model and tractability of AFO</li>
+</ul>
+</li>
+<li>
+<p>BO Methods over Original Space</p>
+<ul>
+<li>Simple models and tractable AFO</li>
+<li>Complex models and heuristic search</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-multi-fidelity-bo--slides4multifidelitypdf">4. Multi-fidelity BO | <a href="4multifidelity.pdf">Slides</a></h3>
+<ul>
+<li>
+<p>Background on Multi-fidelity optimization</p>
+<ul>
+<li>Function approximations (fidelities) with varying cost and accuracy of evaluation</li>
+<li>Discrete fidelity vs. Continuous fidelity</li>
+<li>Example real-world applications (e.g., Auto ML)</li>
+</ul>
+</li>
+<li>
+<p>Key Challenges</p>
+<ul>
+<li>Surrogate modeling of multiple fidelity functions and information sharing</li>
+<li>Selection of input and fidelity pair in each BO iteration</li>
+</ul>
+</li>
+<li>
+<p>BO Algorithms</p>
+<ul>
+<li>Simple and Information-theoretic methods</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-constrained-bo--slides5constrainedbopdf">5. Constrained BO | <a href="5constrainedbo.pdf">Slides</a></h3>
+<ul>
+<li>
+<p>Background on Constrained Optimization</p>
+<ul>
+<li>Valid vs. Invalid inputs via constraints</li>
+<li>Black-box constraints</li>
+<li>Example real-world applications (e.g., design of safe and effective vaccines/drugs)</li>
+</ul>
+</li>
+<li>
+<p>Key Challenges</p>
+<ul>
+<li>Modeling black-box constraints</li>
+<li>Reasoning with learned model over constraints</li>
+</ul>
+</li>
+<li>
+<p>BO Algorithms</p>
+<ul>
+<li>Simple and Information-theoretic methods</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-multi-objective-bo--slides6multiobjbopdf">6. Multi-objective BO | <a href="6multiobjbo.pdf">Slides</a></h3>
+<ul>
+<li>
+<p>Motivating Applications</p>
+<ul>
+<li>Hardware design to trade-off power and performance</li>
+<li>Drug/Vaccine design to trade-off efficacy, safety, and cost</li>
+</ul>
+</li>
+<li>
+<p>Background on Multi-Objective Optimization</p>
+<ul>
+<li>Optimal Pareto set</li>
+<li>Optimal Pareto front</li>
+</ul>
+</li>
+<li>
+<p>BO Algorithms</p>
+<ul>
+<li>Simple methods</li>
+<li>Information-theoretic methods</li>
+<li>Differentiable expected hypervolume improvement</li>
+</ul>
+</li>
+<li>
+<p>Multi-Fidelity BO Algorithms</p>
+</li>
+<li>
+<p>Constrained BO Algorithms</p>
+</li>
+</ul>
+<h3 id="7-outstanding-challenges-and-frontiers-of-bo--slides7futurebopdf">7. Outstanding Challenges and Frontiers of BO | <a href="7futurebo.pdf">Slides</a></h3>
+</div>
+  
+
+  
+  
+
+  
+
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.6803974b207c4147f10c7f9a19448266.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.0879156d664caf1dd0b240fa1b246a30.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.ee00aa4e09ee62617fe2dc15bfcb3f7b.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>
